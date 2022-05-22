@@ -1,0 +1,322 @@
+/* fonts */
+@font-face{
+    font-family: "Audrey";
+    src: url("fonts/Audrey-Bold.woff") format("woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Modern-Sans";
+    src: url("fonts/Moderne-Sans-Font.woff") format("woff");
+    font-weight: normal;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0
+}
+body,
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+}
+body{
+    background-attachment: fixed;
+    background-image: url(./images/708939.jpg);
+    background-position:left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:#F7F7F7;
+    font-weight: 400;
+    font-family: "Modern sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    color:#5b6e80;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+h1,
+h2,
+h3,
+p{
+    margin-bottom: 1em;
+}
+h1,h2,h3{
+    font-family: "Audrey", sans-serif;
+}
+hr{
+    border-top: 1px solid #5b6e80;
+    border-bottom-style:none;
+    border-left-style: none;
+    border-right-style: none;
+    margin:2rem 0;
+}
+/* header style */
+header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width:100%;
+    background-color: black;
+    border-bottom: 5px solid #F7F7F7;
+}
+
+.heady{
+    position:relative;
+    padding: 2em 0;
+    display:flex;
+    justify-content: space-between;
+    width: min(90%, 80em);
+    margin-inline:auto;
+}
+.logo-container{
+    border:2px solid #206A5D;
+    padding:0.5em;
+}
+.logo-container__burger{
+    font-size: 1.2em;
+}
+.bar-container{
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.bar-container__burger{
+    position: absolute;
+    top: 45%;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+.bar-container__burger::before {
+content: '';
+position: absolute;
+top: -8px;
+right: 0;
+width: 20px;
+height: 3px;
+background: white;
+transition: all 0.4s ease-in-out;
+}
+
+.bar-container__burger::after {
+content: '';
+position: absolute;
+top: 8px;
+right:0;
+width: 20px;
+height: 3px;
+background: white;
+transition: all 0.4s ease-in-out;
+}
+/* header nav */
+.nav{
+    display:none;
+}
+.nav-container__list.active > a{
+    color:#206A5D;
+}
+.nav-container__list.log{
+    background-color:#206A5D;
+    padding:0.4em;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+}
+.nav-container__list.log:hover{
+    border: 2px solid #206A5D;
+    background-color: transparent;
+}
+
+.nav-container__link{
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.4s ease-in-out;
+}
+.nav-container__link:hover {
+    color: #206A5D;
+}
+/* about */
+.main-container{
+    width: min(90%, 80em);
+    margin-inline:auto;
+    padding:10em 0 4em;
+}
+.main{
+   width:100%;
+}
+.main:hover{
+    color:white;
+}
+.main__heading{
+    font-size: 4em;
+    margin-bottom: 1em;
+    transition: all 0.4s ease-in-out;
+}
+.main__heading:hover{
+    border-bottom: 4px solid#206A5D;
+}
+.main__subheading{
+    transition: all 0.4s ease-in-out;
+}
+.register__paragraph, .sign-in__paragraph, .main__paragraph{
+    margin-bottom: 1em;
+    transition: all 0.4s ease-in-out;
+}
+.list-container{
+    display:flex;
+    flex-flow: column wrap;
+    row-gap: 1em;
+    margin-bottom: 1em;
+    transition: all 0.4s ease-in-out;
+}
+/* calculator, contact, register and sign-in page*/
+.calculator, .contact, .register, .sign-in{
+    padding:10em 0 4em;
+    color:white;
+}
+#calculator.calculator, #contact.contact{
+    padding:4em 0;
+}
+.calculator__heading, .sign-in__heading, .register__heading, .contact__heading{
+    font-size: 2em;
+}
+.contact__heading span{
+    color:#206A5D;
+}
+.calculator-container, .contact-container{
+    width:min(90%, 80em);
+    margin-inline:auto;
+}
+.contact__form{
+    width:100%;
+}
+
+.sign-in__form .form__input, .register__form .form__input, .register__form select, 
+.contact__form .form__input, .contact__form .form__textarea{
+    width:75%;
+    padding:1em;
+    outline:none;
+    border: none;
+    background:#1f1f1f;
+    margin-bottom:2em;
+    border-radius:8px;
+    color:white;
+}
+.sign-in__form .btn, .register__form .btn, .contact__form .btn{
+    font-weight: 400;
+    border-radius: 8px;
+    padding: 0.8em 2em;
+    font-size: 1rem;
+    display: block;
+    background: #206A5D;
+    transition: all 0.4s ease-in-out;
+    letter-spacing: 1px;
+    color:white;
+    margin-top: 1em;
+    border:0;
+}
+.sign-in__form .btn:hover, .register__form .btn:hover, .contact__form .btn:hover{
+    transform: scale(1.04);
+    opacity: 0.75;
+}
+.register,.sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in{
+    height: 100vh;
+}
+.sign-in__form, .register__form{
+    width:min(90%, 30em);
+    margin-inline:auto;
+}
+/* calculator */
+.calculator-flex{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    color:black;
+    width:20em;
+}
+.calculator-flex__item{
+    display: flex;
+    justify-content: space-between;
+}
+.calculator-flex span{
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: fit-content;
+    cursor:pointer;
+}
+span.modulo{
+    padding:1.2rem 0.8rem;
+}
+span.double{
+    padding:1.2rem 0.6rem;
+}
+span.green{
+    background-color: #206A5D;
+    color:white;
+}
+span.black{
+    background-color:#1f1f1f;
+    color:white;
+}
+span.grey{
+    background-color: #F7F7F7;
+}
+.calculator-flex input{
+    width:100%;
+    padding:1rem;
+    outline:none;
+    border: none;
+    background:#F7F7F7;
+    border-radius:0.5rem;
+    color:black;
+}
+@media screen and (min-width:1024px) {
+    .nav-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items:center;
+        column-gap: 1em;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bar-container{
+        display:none;
+    }
+    .main{
+        width:50%;
+    }
+    .main-container{
+        flex-direction: row;
+    }
+    .contact__form{
+        width:50%;
+    }
+    .calculator-container, .contact-container{
+        padding-left: 4em;
+    }
+}
+
+
