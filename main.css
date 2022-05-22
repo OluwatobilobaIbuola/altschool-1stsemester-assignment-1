@@ -24,7 +24,7 @@ p{
 body{
     background-attachment: fixed;
     background-image: url(./images/708939.jpg);
-    background-position:left;
+    background-position: center left;
     background-size: cover;
     background-repeat: no-repeat;
     background-color:#F7F7F7;
@@ -161,7 +161,7 @@ transition: all 0.4s ease-in-out;
     color:white;
 }
 .main__heading{
-    font-size: 4em;
+    font-size: 9vmin;
     margin-bottom: 1em;
     transition: all 0.4s ease-in-out;
 }
