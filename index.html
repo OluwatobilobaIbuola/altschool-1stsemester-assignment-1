@@ -72,72 +72,90 @@
         </div>
       </div>
     </section>
+    <!-- flexbox property used for this calculator -->
     <section id="calculator" class="calculator">
       <div class="calculator-container">
         <h2 class="calculator__heading">Calculator</h2>
-        <div class="calculator-flex">
-          <div class="calculator-container__item">
-            <input type="number">
+        <div class="flex cal-interface">
+          <form class="calculator-container__item">
+            <input class="cal-display" type="text">
+          </form>
+          <div class="calculator-flex__item">
+            <input class="btn grey" type="button" value="AC">
+            <input class="btn grey" type="button" value="+/-">
+            <input class="btn grey" type="button" value="%">
+            <input class="btn green" type="button" value="/">
           </div>
           <div class="calculator-flex__item">
-            <span class="double grey">AC</span><span class="double grey">+/-</span><span class="modulo grey">%</span><span class="green">/</span>
+            <input class="btn black" type="button" value="7">
+            <input class="btn black" type="button" value="8">
+            <input class="btn black" type="button" value="9">
+            <input class="btn green" type="button" value="*">
           </div>
           <div class="calculator-flex__item">
-            <span class="black">7</span><span class="black">8</span><span class="black">9</span><span class="green">*</span>
+            <input class="btn black" type="button" value="4">
+            <input class="btn black" type="button" value="5">
+            <input class="btn black" type="button" value="6">
+            <input class="btn green" type="button" value="-">
           </div>
           <div class="calculator-flex__item">
-            <span class="black">4</span><span class="black">5</span><span class="black">6</span><span class="green">-</span>
+            <input class="btn black" type="button" value="1">
+            <input class="btn black" type="button" value="2">
+            <input class="btn black" type="button" value="3">
+            <input class="btn green" type="button" value="+">
           </div>
           <div class="calculator-flex__item">
-            <span class="black">1</span><span class="black">2</span><span class="black">3</span><span class="green">+</span>
-          </div>
-          <div class="calculator-flex__item">
-            <span class="black">0</span><span class="double black">00</span><span class="black">.</span><span class="green">=</span>
+            <input class="btn black" type="button" value="0">
+            <input class="btn black" type="button" value="00">
+            <input class="btn black" type="button" value=".">
+            <input class="btn green" type="button" value="=">
           </div>
         </div>
-      
       </div>
     </section>
+    <!-- table tag used for this calculator -->
     <section id="calculator" class="calculator">
       <div class="calculator-container">
         <h2 class="calculator__heading">Calculator</h2>
-        <form 
-            <input type="text">
-        </form>
-        <table>
-          <tr>
-            <td><input class="grey" type="button" value="AC"></td>
-            <td><input class="grey" type="button" value="+/-"></td>
-            <td><input class="grey" type="button" value="%"></td>
-            <td><input class="green" type="button" value="/"></td>
-          </tr>
-          <tr>
-            <td><input class="black" type="button" value="7"></td>
-            <td><input class="black" type="button" value="8"></td>
-            <td><input class="black" type="button" value="9"></td>
-            <td><input class="green" type="button" value="*"></td>
-          </tr>
-          <tr>
-            <td><input class="black" type="button" value="4"></td>
-            <td><input class="black" type="button" value="5"></td>
-            <td><input class="black" type="button" value="6"></td>
-            <td><input class="green" type="button" value="-"></td>
-          </tr>
-          <tr
-            <td><input class="black" type="button" value="1"></td>
-            <td><input class="black" type="button" value="2"></td>
-            <td><input class="black" type="button" value="3"></td>
-            <td><input class="green" type="button" value="+"></td>
-          </tr>
-          <tr>
-            <td><input class="black" type="button" value="0"></td>
-            <td><input class="black" type="button" value="."></td>
-            <td><input class="green" type="button" value="="></td>
-          </tr>
-        </table>
-      
+        <div class="table cal-interface">
+          <form>
+            <input  class="cal-display" type="text">
+          </form>
+          <table>
+            <tr>
+              <td><input class="btn grey" type="button" value="AC"></td>
+              <td><input class="btn grey" type="button" value="+/-"></td>
+              <td><input class="btn grey" type="button" value="%"></td>
+              <td><input class="btn green" type="button" value="/"></td>
+            </tr>
+            <tr>
+              <td><input class="btn black" type="button" value="7"></td>
+              <td><input class="btn black" type="button" value="8"></td>
+              <td><input class="btn black" type="button" value="9"></td>
+              <td><input class="btn green" type="button" value="*"></td>
+            </tr>
+            <tr>
+              <td><input class="btn black" type="button" value="4"></td>
+              <td><input class="btn black" type="button" value="5"></td>
+              <td><input class="btn black" type="button" value="6"></td>
+              <td><input class="btn green" type="button" value="-"></td>
+            </tr>
+            <tr>
+              <td><input class="btn black" type="button" value="1"></td>
+              <td><input class="btn black" type="button" value="2"></td>
+              <td><input class="btn black" type="button" value="3"></td>
+              <td><input class="btn green" type="button" value="+"></td>
+            </tr>
+            <tr>
+              <td><input class="btn black" type="button" value="0"></td>
+              <td><input class="btn black" type="button" value="00"></td>
+              <td><input class="btn black" type="button" value="."></td>
+              <td><input class="btn green" type="button" value="="></td>
+            </tr>
+          </table>
+        </div>
+       
       </div>
-    </section>
-  
+    </section>    
 </body>
 </html>
